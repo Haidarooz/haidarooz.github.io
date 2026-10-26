@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haidar — Senior Mobile Engineer</title>
+  <meta name="description" content="Haidar is a senior mobile engineer in Melbourne building cross-platform apps with .NET MAUI, Kotlin Multiplatform, Jetpack Compose and SwiftUI." />
+  <!-- TODO: replace with your real URL once deployed -->
+  <meta property="og:title" content="Haidar — Senior Mobile Engineer" />
+  <meta property="og:description" content="Cross-platform mobile apps used by real people, every day." />
+  <meta property="og:image" content="assets/images/og.png" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top">haidar<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <p class="eyebrow">Senior Mobile Engineer · Melbourne, Australia</p>
+      <h1 class="hero__title">
+        I build mobile apps<br />
+        people rely on <em>every day.</em>
+      </h1>
+      <p class="hero__lede">
+        <!-- TODO: tune this pitch -->
+        Cross-platform engineer working across .NET MAUI, Kotlin Multiplatform,
+        Jetpack Compose and SwiftUI — from national health services to
+        my own indie apps on the App Store and Google Play.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--solid" href="#work">See my work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <header class="section__head">
+        <span class="section__num">01</span>
+        <h2>Selected work</h2>
+      </header>
+
+      <!-- Featured project -->
+      <article class="project project--featured">
+        <div class="project__media">
+          <!-- TODO: add a screenshot at assets/images/moimo.png and swap this placeholder -->
+          <div class="placeholder" role="img" aria-label="Moimo app screenshot placeholder">
+            <div class="phone">
+              <div class="phone__line"></div>
+              <div class="phone__dot" style="top:18%"></div>
+              <div class="phone__dot" style="top:42%"></div>
+              <div class="phone__dot phone__dot--big" style="top:63%"></div>
+              <div class="phone__dot" style="top:84%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="project__body">
+          <p class="project__tag">Indie · Designed &amp; built solo</p>
+          <h3>Moimo</h3>
+          <p>
+            A timeline app about perspective. All your events live on a single
+            vertical line that you zoom from years down to weeks, so you see
+            the shape of your life at a glance.
+          </p>
+          <ul class="chips">
+            <!-- TODO: correct the tech used -->
+            <li>iOS</li><li>Android</li><li>Product design</li>
+          </ul>
+          <div class="project__links">
+            <a href="https://moimo.app" target="_blank" rel="noopener">moimo.app ↗</a>
+            <!-- TODO: paste store URLs -->
+            <a href="#" target="_blank" rel="noopener">App Store ↗</a>
+            <a href="#" target="_blank" rel="noopener">Google Play ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project grid: duplicate a .card to add more -->
+      <div class="grid">
+        <article class="card">
+          <p class="project__tag">Australian Digital Health Agency</p>
+          <h3>1800MEDICARE</h3>
+          <p>
+            <!-- TODO: describe your contribution (keep it within what you're allowed to share publicly) -->
+            Senior mobile engineer on the national 1800MEDICARE app, built with .NET MAUI.
+          </p>
+          <ul class="chips"><li>.NET MAUI</li><li>C#</li><li>Health</li></ul>
+        </article>
+
+        <article class="card">
+          <p class="project__tag">Retail</p>
+          <h3>ALDIMobile</h3>
+          <p><!-- TODO -->Short description of what you built or improved.</p>
+          <ul class="chips"><li>TODO</li></ul>
+        </article>
+
+        <article class="card">
+          <p class="project__tag">Local government</p>
+          <h3>City of Newcastle</h3>
+          <p><!-- TODO -->Short description of what you built or improved.</p>
+          <ul class="chips"><li>TODO</li></ul>
+        </article>
+
+        <article class="card">
+          <p class="project__tag">Local government</p>
+          <h3>Brisbane App</h3>
+          <p><!-- TODO -->Short description of what you built or improved.</p>
+          <ul class="chips"><li>TODO</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="section" id="stack">
+      <header class="section__head">
+        <span class="section__num">02</span>
+        <h2>Stack</h2>
+      </header>
+      <div class="stack">
+        <div>
+          <h3>Cross-platform</h3>
+          <ul><li>.NET MAUI / C#</li><li>Kotlin Multiplatform</li></ul>
+        </div>
+        <div>
+          <h3>Native</h3>
+          <ul><li>Jetpack Compose</li><li>SwiftUI</li><li>SwiftUI → Android porting</li></ul>
+        </div>
+        <div>
+          <h3>Ways of working</h3>
+          <ul><li>Agile / SAFe</li><li>Stakeholder collaboration</li><li>App Store &amp; Play releases</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE (timeline) ============ -->
+    <section class="section" id="experience">
+      <header class="section__head">
+        <span class="section__num">03</span>
+        <h2>Experience</h2>
+      </header>
+      <ol class="timeline">
+        <!-- TODO: fill in dates, titles and one-line summaries. Newest first. -->
+        <li class="timeline__item">
+          <span class="timeline__date">20XX — Now</span>
+          <h3>Senior Mobile Engineer · Australian Digital Health Agency</h3>
+          <p>1800MEDICARE mobile app (.NET MAUI).</p>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__date">20XX — Now</span>
+          <h3>Founder · Moimo</h3>
+          <p>Designed, built and shipped a timeline app to iOS and Android.</p>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__date">20XX — 20XX</span>
+          <h3>Role · Company</h3>
+          <p>ALDIMobile, City of Newcastle and Brisbane apps.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <header class="section__head">
+        <span class="section__num">04</span>
+        <h2>Let's talk</h2>
+      </header>
+      <p class="contact__lede">Open to interesting mobile work, collaborations and a good coffee in Melbourne.</p>
+      <!-- TODO: replace with your real links -->
+      <a class="contact__email" href="mailto:you@example.com">you@example.com</a>
+      <ul class="contact__links">
+        <li><a href="https://github.com/Haidarooz" target="_blank" rel="noopener">GitHub ↗</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="assets/Haidar-CV.pdf" target="_blank" rel="noopener">CV (PDF) ↗</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Haidar · Built by hand, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
