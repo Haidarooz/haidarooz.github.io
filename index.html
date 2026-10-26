@@ -3,201 +3,590 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Haidar — Senior Mobile Engineer</title>
-  <meta name="description" content="Haidar is a senior mobile engineer in Melbourne building cross-platform apps with .NET MAUI, Kotlin Multiplatform, Jetpack Compose and SwiftUI." />
-  <!-- TODO: replace with your real URL once deployed -->
-  <meta property="og:title" content="Haidar — Senior Mobile Engineer" />
-  <meta property="og:description" content="Cross-platform mobile apps used by real people, every day." />
-  <meta property="og:image" content="assets/images/og.png" />
+  <title>Haidar — App Development Services</title>
+  <meta name="description" content="Haidar is a Melbourne-based mobile app developer building iOS, Android and cross-platform apps — from design to launch." />
+  <meta property="og:title" content="Haidar — App Development Services" />
+  <meta property="og:description" content="Mobile app design & development: iOS, Android and cross-platform." />
+  <meta property="og:image" content="https://framerusercontent.com/images/qZHxwgIubHRnkE5cpIXfS1exQ.jpg" />
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
+  <!-- ============ NAV ============ -->
   <header class="nav">
-    <a class="nav__logo" href="#top">haidar<span>.</span></a>
-    <nav aria-label="Primary">
-      <ul class="nav__links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#stack">Stack</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="nav__pill" aria-label="Primary">
+      <span class="nav__indicator" aria-hidden="true"></span>
+      <a href="#home" class="is-active">Home</a>
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-      <span aria-hidden="true">◐</span>
-    </button>
+    <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
 
   <main id="main">
     <!-- ============ HERO ============ -->
-    <section class="hero" id="top">
-      <p class="eyebrow">Senior Mobile Engineer · Melbourne, Australia</p>
-      <h1 class="hero__title">
-        I build mobile apps<br />
-        people rely on <em>every day.</em>
-      </h1>
-      <p class="hero__lede">
-        <!-- TODO: tune this pitch -->
-        Cross-platform engineer working across .NET MAUI, Kotlin Multiplatform,
-        Jetpack Compose and SwiftUI — from national health services to
-        my own indie apps on the App Store and Google Play.
-      </p>
-      <div class="hero__cta">
-        <a class="btn btn--solid" href="#work">See my work</a>
-        <a class="btn" href="#contact">Get in touch</a>
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="glass"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
       </div>
+
+      <h1 class="hero__title">Hi, I'm <b>Haidar</b></h1>
+      <p class="hero__role" aria-live="polite" data-roles="Creative Engineering|iOS Development|Cross-platform Apps|Product Design|Branding|Collaborative Team Player"><span>Creative Engineering</span></p>
+
+      <div class="hero__photo">
+        <img src="https://framerusercontent.com/images/qZHxwgIubHRnkE5cpIXfS1exQ.jpg" alt="Portrait of Haidar" width="366" height="298" />
+      </div>
+
+      <div class="clients">
+        <span class="clients__faces">
+          <img src="https://framerusercontent.com/images/um3bxT2WVFF4kr6enjXB8pntPlo.svg" alt="" />
+          <img src="https://framerusercontent.com/images/lWoxjUfzID4I2CJ2EAGpp1BxXk.svg" alt="" />
+          <img src="https://framerusercontent.com/images/LtSGTHttO0ZpuCVLNu4mPIpOuk.svg" alt="" />
+        </span>
+        20+ Happy Clients
+      </div>
+
+      <a class="btn btn--hero" href="#contact">Let's Work Together!</a>
     </section>
 
-    <!-- ============ WORK ============ -->
-    <section class="section" id="work">
-      <header class="section__head">
-        <span class="section__num">01</span>
-        <h2>Selected work</h2>
-      </header>
-
-      <!-- Featured project -->
-      <article class="project project--featured">
-        <div class="project__media">
-          <!-- TODO: add a screenshot at assets/images/moimo.png and swap this placeholder -->
-          <div class="placeholder" role="img" aria-label="Moimo app screenshot placeholder">
-            <div class="phone">
-              <div class="phone__line"></div>
-              <div class="phone__dot" style="top:18%"></div>
-              <div class="phone__dot" style="top:42%"></div>
-              <div class="phone__dot phone__dot--big" style="top:63%"></div>
-              <div class="phone__dot" style="top:84%"></div>
-            </div>
-          </div>
-        </div>
-        <div class="project__body">
-          <p class="project__tag">Indie · Designed &amp; built solo</p>
-          <h3>Moimo</h3>
-          <p>
-            A timeline app about perspective. All your events live on a single
-            vertical line that you zoom from years down to weeks, so you see
-            the shape of your life at a glance.
-          </p>
-          <ul class="chips">
-            <!-- TODO: correct the tech used -->
-            <li>iOS</li><li>Android</li><li>Product design</li>
-          </ul>
-          <div class="project__links">
-            <a href="https://moimo.app" target="_blank" rel="noopener">moimo.app ↗</a>
-            <!-- TODO: paste store URLs -->
-            <a href="#" target="_blank" rel="noopener">App Store ↗</a>
-            <a href="#" target="_blank" rel="noopener">Google Play ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project grid: duplicate a .card to add more -->
-      <div class="grid">
-        <article class="card">
-          <p class="project__tag">Australian Digital Health Agency</p>
-          <h3>1800MEDICARE</h3>
-          <p>
-            <!-- TODO: describe your contribution (keep it within what you're allowed to share publicly) -->
-            Senior mobile engineer on the national 1800MEDICARE app, built with .NET MAUI.
-          </p>
-          <ul class="chips"><li>.NET MAUI</li><li>C#</li><li>Health</li></ul>
-        </article>
-
-        <article class="card">
-          <p class="project__tag">Retail</p>
-          <h3>ALDIMobile</h3>
-          <p><!-- TODO -->Short description of what you built or improved.</p>
-          <ul class="chips"><li>TODO</li></ul>
-        </article>
-
-        <article class="card">
-          <p class="project__tag">Local government</p>
-          <h3>City of Newcastle</h3>
-          <p><!-- TODO -->Short description of what you built or improved.</p>
-          <ul class="chips"><li>TODO</li></ul>
-        </article>
-
-        <article class="card">
-          <p class="project__tag">Local government</p>
-          <h3>Brisbane App</h3>
-          <p><!-- TODO -->Short description of what you built or improved.</p>
-          <ul class="chips"><li>TODO</li></ul>
-        </article>
+    <!-- ============ ABOUT (stacking cards) ============ -->
+    <section class="about" id="about">
+      <h2 class="title about__title">About Me</h2>
+      <div class="blob blob--a" aria-hidden="true"></div>
+      <div class="blob blob--b" aria-hidden="true"></div>
+      <div class="about__stack">
+        <div class="about__slot"><article class="ring about__card" style="--r:-1.2deg">
+          <p>I'm an experienced <strong>mobile app developer</strong> with a passion for creating innovative and user-friendly mobile applications. My expertise lies in developing high-quality apps for both Android and iOS platforms, utilizing the latest technologies and trends to deliver exceptional user experiences.</p>
+        </article></div>
+        <div class="about__slot"><article class="ring about__card" style="--r:1deg">
+          <p>My app development journey began with a solid foundation in engineering principles, honed through years of formal education. I hold a <strong>Bachelor's degree in Computer Engineering</strong>, where I gained technical expertise and a deep appreciation for the seamless integration of technology and user experience.</p>
+        </article></div>
+        <div class="about__slot"><article class="ring about__card" style="--r:-0.6deg">
+          <p>My tech stack spans <strong>iOS, Android, and cross-platform</strong> development. Proficient in Swift, Objective-C, Kotlin, Java, Xamarin and .NET MAUI, I use UIKit, SwiftUI, Jetpack Compose, Realm, and REST APIs to build high-performance apps — with Git, CI/CD, MVVM, XCTest and TDD/BDD practices for scalable, testable solutions.</p>
+        </article></div>
       </div>
+      <a class="btn" href="https://drive.google.com/file/d/19_OCQ-qVH0YKkHE_2grXsV8NshVsB8L2/view?usp=share_link" target="_blank" rel="noopener">Read My Resume</a>
     </section>
 
     <!-- ============ STACK ============ -->
     <section class="section" id="stack">
-      <header class="section__head">
-        <span class="section__num">02</span>
-        <h2>Stack</h2>
-      </header>
-      <div class="stack">
-        <div>
-          <h3>Cross-platform</h3>
-          <ul><li>.NET MAUI / C#</li><li>Kotlin Multiplatform</li></ul>
-        </div>
-        <div>
-          <h3>Native</h3>
-          <ul><li>Jetpack Compose</li><li>SwiftUI</li><li>SwiftUI → Android porting</li></ul>
-        </div>
-        <div>
-          <h3>Ways of working</h3>
-          <ul><li>Agile / SAFe</li><li>Stakeholder collaboration</li><li>App Store &amp; Play releases</li></ul>
+      <h2 class="title">My Stack</h2>
+      <div class="blob blob--c" aria-hidden="true"></div>
+      <ul class="flip-grid">
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/dsi4q98Q9a9mKTazOsb39GcLU.png" alt="" loading="lazy" />
+                <span class="flip__name">iOS</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>I specialize in crafting robust and user-friendly iOS applications, leveraging Swift and UIKit / SwiftUI to build seamless user experiences tailored for Apple devices.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/cFvzSg6wTObjwa2gIncEVR2ROaA.png" alt="" loading="lazy" />
+                <span class="flip__name">Android</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>I create dynamic Android apps using Kotlin, ensuring performance, scalability, and compatibility across a wide range of devices.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/zXKRzmCt4YGKZkdinXe8N4ZMO8.svg" alt="" loading="lazy" />
+                <span class="flip__name">Xamarin</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Xamarin empowers me to develop cross-platform mobile apps with shared codebases, delivering native performance for both iOS and Android users.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/USKhgcr0lblGlnbRFzqtkRe8.svg" alt="" loading="lazy" />
+                <span class="flip__name">Firebase</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Firebase is my trusted backend-as-a-service platform, providing tools for real-time data sync, authentication, analytics, and cloud storage to enhance app functionality.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="assets/icons/figma.svg" alt="" loading="lazy" />
+                <span class="flip__name">Figma</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="assets/icons/zapier.svg" alt="" loading="lazy" />
+                <span class="flip__name">Zapier</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Zapier is my automation tool of choice for streamlining workflows by connecting apps and services, enabling seamless task automation without writing custom code.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/9FOAlhlx67huhCg6ChYJqC27cg.png" alt="" loading="lazy" />
+                <span class="flip__name">Swift</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Swift is my go-to programming language for iOS development, valued for its clarity, performance, and modern features that simplify creating powerful apps.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/Xbuy3H38KIaL8yrHQtpFogzNw80.png" alt="" loading="lazy" />
+                <span class="flip__name">Kotlin</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>I use Kotlin for Android development, benefiting from its concise syntax, safety features, and seamless integration with existing Java frameworks.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/Lb1JIV4YJqZQUuRnedDpzMAfAcs.webp" alt="" loading="lazy" />
+                <span class="flip__name">Xcode</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Xcode is my primary IDE for iOS development, offering an all-in-one environment for coding, debugging, and designing user interfaces for Apple platforms.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/3mKVllz0qyATpRWbkanQ4ZqfwI.png" alt="" loading="lazy" />
+                <span class="flip__name">Visual Studio</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>I use Visual Studio for Xamarin and MAUI development, enabling efficient cross-platform app creation with powerful debugging and deployment features.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/jp6AdPsbnjLDL4pr4sVZXROcJ90.png" alt="" loading="lazy" />
+                <span class="flip__name">Android Studio</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Android Studio is my go-to IDE for Android development, providing robust tools for coding, testing, and optimizing applications for various Android devices.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/n1TB8h53RV5bbndRTndhevXRUy8.png" alt="" loading="lazy" />
+                <span class="flip__name">Spline</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Spline is my go-to tool for creating interactive 3D designs, adding engaging, dynamic visual elements to apps and enhancing the user experience.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/wBFcGK0ZLzapyf67FZCUovLL7c.png" alt="" loading="lazy" />
+                <span class="flip__name">Adobe Illustrator</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Adobe Illustrator is my tool of choice for creating vector-based graphics, ensuring sharp, scalable designs for app icons, illustrations, and UI elements.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="https://framerusercontent.com/images/dIZc4xyjdQj2P6TiV2MgRE2Uw.png" alt="" loading="lazy" />
+                <span class="flip__name">Stripe</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Stripe is my preferred payment platform for integrating secure and seamless payment processing, supporting diverse payment methods and global scalability in apps.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="assets/icons/slack.svg" alt="" loading="lazy" />
+                <span class="flip__name">Slack</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Slack is the cornerstone of my collaborative workflow. It fosters a dynamic environment where teams can seamlessly exchange ideas, share files, and provide real-time feedback.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo" src="assets/icons/mailchimp.svg" alt="" loading="lazy" />
+                <span class="flip__name">Mailchimp</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Mailchimp is my go-to for elevating outreach strategies: engaging email campaigns, subscriber lists, and performance analysis for effective, targeted communication.</span></span>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+      <h2 class="title">Services</h2>
+      <div class="services__layout">
+        <aside class="services__sticky" aria-hidden="true">
+          <div class="services__num"><span>1</span></div>
+          <p class="services__name">App Design &amp; Development</p>
+        </aside>
+        <div class="services__list">
+        <article class="svc" data-num="1" data-title="App Design &amp; Development">
+          <header class="svc__head"><span class="svc__num">1</span><h3>App Design &amp; Development</h3></header>
+          <p>Bring your app idea to life. We specialize in developing native and cross-platform applications that combine stunning design with seamless functionality. Whether you&#x27;re looking to engage users, boost productivity, or expand your digital presence, our process begins with a deep understanding of your goals and target audience. We focus on intuitive user experience (UX) design, ensuring smooth navigation and clear interactions, paired with cutting-edge development practices to deliver high-performing, visually compelling apps tailored to your needs.</p>
+          <div class="svc__orb" style="--c1:#ffb4a8;--c2:#f0533d;--c3:#a3200f" aria-hidden="true"></div>
+        </article>
+        <article class="svc" data-num="2" data-title="App Prototyping">
+          <header class="svc__head"><span class="svc__num">2</span><h3>App Prototyping</h3></header>
+          <p>Turn your ideas into interactive, tangible prototypes. Our app prototyping service helps you visualize and test your app concept before development begins. By creating detailed wireframes and interactive mockups, we ensure your vision aligns with user expectations and business goals. This process allows for early feedback, refinement of features, and validation of user experience (UX) design, saving time and resources in the long run. With a focus on clarity and functionality, we bring your concept to life, giving you a clear roadmap for the development phase.</p>
+          <div class="svc__orb" style="--c1:#a9c8ff;--c2:#3c6fe8;--c3:#1b2f8f" aria-hidden="true"></div>
+        </article>
+        <article class="svc" data-num="3" data-title="App Maintenance &amp; Support">
+          <header class="svc__head"><span class="svc__num">3</span><h3>App Maintenance &amp; Support</h3></header>
+          <p>Keep your app running smoothly and efficiently with our maintenance and support services. We ensure your application stays up-to-date with the latest technologies, operating systems, and user expectations. From bug fixes and performance optimization to feature updates and security enhancements, our proactive approach minimizes downtime and maximizes user satisfaction. With ongoing monitoring and dedicated support, we help your app evolve alongside your business, ensuring it continues to deliver value and perform at its best.</p>
+          <div class="svc__orb" style="--c1:#b6f2c8;--c2:#2fbf6b;--c3:#13693a" aria-hidden="true"></div>
+        </article>
+        <article class="svc" data-num="4" data-title="UI/UX Design">
+          <header class="svc__head"><span class="svc__num">4</span><h3>UI/UX Design</h3></header>
+          <p>Create visually stunning and user-friendly experiences with our UX/UI design services. We combine creativity with a deep understanding of user behavior to craft intuitive interfaces that engage and delight. From wireframes to final design, we focus on seamless navigation, aesthetic appeal, and functionality, ensuring every element serves a purpose. Whether for a native or cross-platform app, our designs are tailored to your brand and audience, providing a solid foundation for a successful and impactful application.</p>
+          <div class="svc__orb" style="--c1:#ffd6a3;--c2:#f59322;--c3:#a14d06" aria-hidden="true"></div>
+        </article>
+        <article class="svc" data-num="5" data-title="Backend Integration">
+          <header class="svc__head"><span class="svc__num">5</span><h3>Backend Integration</h3></header>
+          <p>Power your app with robust and reliable backend solutions. Our backend integration services ensure seamless communication between your app and its server, enabling smooth data handling, secure storage, and real-time synchronization. Whether it&#x27;s integrating APIs, managing databases, or setting up cloud-based infrastructures, we deliver scalable and efficient solutions tailored to your app&#x27;s needs. With a focus on performance and security, we ensure your app operates flawlessly, providing a seamless experience for your users.</p>
+          <div class="svc__orb" style="--c1:#dcc6ff;--c2:#8b5cf6;--c3:#4c1d95" aria-hidden="true"></div>
+        </article>
+        <article class="svc" data-num="6" data-title="Brand Identity Design">
+          <header class="svc__head"><span class="svc__num">6</span><h3>Brand Identity Design</h3></header>
+          <p>Define your brand with a unique and compelling identity that resonates with your audience. Our brand identity design service goes beyond just a logo—we craft a cohesive visual language that reflects your values, mission, and vision. From color palettes and typography to custom icons and branding guidelines, we ensure every element aligns with your story. Whether you&#x27;re launching a new app or refreshing an existing brand, we help you establish a strong and memorable presence that stands out in a competitive market.</p>
+          <div class="svc__orb" style="--c1:#a8f0f5;--c2:#14b8c8;--c3:#0b5f73" aria-hidden="true"></div>
+        </article>
+        <article class="svc" data-num="7" data-title="Design System Creation">
+          <header class="svc__head"><span class="svc__num">7</span><h3>Design System Creation</h3></header>
+          <p>Ensure design consistency across all digital platforms. We develop a design system that provides a collection of reusable components, including UI elements, design patterns, and code snippets. This streamlines the design and development process, promotes brand consistency, and empowers your team to create future digital assets that seamlessly integrate with your existing website.</p>
+          <div class="svc__orb" style="--c1:#ffc4dd;--c2:#ec4899;--c3:#8f1650" aria-hidden="true"></div>
+        </article>
+        <article class="svc" data-num="8" data-title="User Experience (UX) Research &amp; Testing">
+          <header class="svc__head"><span class="svc__num">8</span><h3>User Experience (UX) Research &amp; Testing</h3></header>
+          <p>Understand your users and refine your app with data-driven insights. Our UX/UI user research and testing services focus on uncovering user needs, behaviors, and preferences through interviews, surveys, and usability testing. By analyzing real-world interactions with prototypes or live applications, we identify pain points and areas for improvement. This iterative process ensures your app delivers an intuitive and enjoyable experience, meeting user expectations while achieving your business goals.</p>
+          <div class="svc__orb" style="--c1:#c7cbff;--c2:#5b62f5;--c3:#272b8f" aria-hidden="true"></div>
+        </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ EXPERIENCE (timeline) ============ -->
-    <section class="section" id="experience">
-      <header class="section__head">
-        <span class="section__num">03</span>
-        <h2>Experience</h2>
-      </header>
-      <ol class="timeline">
-        <!-- TODO: fill in dates, titles and one-line summaries. Newest first. -->
-        <li class="timeline__item">
-          <span class="timeline__date">20XX — Now</span>
-          <h3>Senior Mobile Engineer · Australian Digital Health Agency</h3>
-          <p>1800MEDICARE mobile app (.NET MAUI).</p>
-        </li>
-        <li class="timeline__item">
-          <span class="timeline__date">20XX — Now</span>
-          <h3>Founder · Moimo</h3>
-          <p>Designed, built and shipped a timeline app to iOS and Android.</p>
-        </li>
-        <li class="timeline__item">
-          <span class="timeline__date">20XX — 20XX</span>
-          <h3>Role · Company</h3>
-          <p>ALDIMobile, City of Newcastle and Brisbane apps.</p>
-        </li>
-      </ol>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <h2 class="title">Projects</h2>
+
+      <!-- Featured: Moimo -->
+      <article class="feature reveal">
+        <div class="ring feature__art">
+          <div class="feature__stage">
+            <img class="phone phone--l" src="assets/moimo/moimo-screen-3.webp" alt="Moimo AI Overview screen" loading="lazy" />
+            <img class="phone phone--r" src="assets/moimo/moimo-screen-6.webp" alt="Moimo Blueprints screen" loading="lazy" />
+            <img class="phone phone--c" src="assets/moimo/moimo-screen-1.webp" alt="Moimo timeline screen" loading="lazy" />
+          </div>
+        </div>
+        <div class="feature__body">
+          <div class="feature__brand">
+            <img src="assets/moimo/moimo-icon.png" alt="" width="56" height="56" />
+            <span class="project__cat">Indie App · Designed, built &amp; shipped solo</span>
+          </div>
+          <h3 class="feature__title">Moimo: Your life, on a single timeline</h3>
+          <p>A visual timeline of everything that matters — past, present and future. Plot milestones, track habits, plan goals and preserve memories on one zoomable canvas, with an AI that lets you just tell your timeline what to change.</p>
+          <ul class="feature__tags">
+            <li>Talk to your timeline</li><li>AI Overview</li><li>Multiple timelines</li><li>Blueprints</li><li>Real-time sharing</li><li>Home-screen widget</li>
+          </ul>
+          <div class="feature__links">
+            <a class="btn btn--sm btn--blue" href="https://apps.apple.com/au/app/moimo-one-timeline-for-all/id6812559015" target="_blank" rel="noopener">App Store</a>
+            <a class="btn btn--sm btn--blue" href="https://play.google.com/store/apps/details?id=com.moimo.app" target="_blank" rel="noopener">Google Play</a>
+            <a class="btn btn--sm" href="https://moimo.app" target="_blank" rel="noopener">moimo.app ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature--flip reveal">
+        <div class="ring feature__art">
+          <div class="feature__stage feature__stage--photo"><img src="https://framerusercontent.com/images/sX818wfhTflJluIeZbKE8q4.png" alt="Growr app on a phone" loading="lazy" /></div>
+        </div>
+        <div class="feature__body">
+          <div class="feature__brand">
+            <span class="feature__mono" style="--c1:#b6f2c8;--c2:#2fbf6b;--c3:#13693a" aria-hidden="true">G</span>
+            <span class="project__cat">Personal Project · 6 months</span>
+          </div>
+          <h3 class="feature__title">Growr: Transforming the Plant Marketplace</h3>
+          <p>An eco-conscious marketplace connecting plant enthusiasts, nurseries and nature lovers to buy, sell and chat about plants. Every transaction donates part of its fee to reforestation, so each sale leaves a greener footprint.</p>
+          <ul class="feature__tags">
+            <li>Marketplace</li><li>In-app chat</li><li>Stripe payments</li><li>Auto content moderation</li><li>Reviews &amp; reporting</li><li>Reforestation donations</li>
+          </ul>
+          <div class="feature__links">
+            <a class="btn btn--sm btn--blue" href="https://primary-input-060174.framer.app/growr-plants-app" target="_blank" rel="noopener">Read case study ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature reveal">
+        <div class="ring feature__art">
+          <div class="feature__stage feature__stage--photo"><img src="https://framerusercontent.com/images/vTk4HG9JbygfXK80H2SZqcPF3Vw.png" alt="Airport VR Experience app on a phone" loading="lazy" /></div>
+        </div>
+        <div class="feature__body">
+          <div class="feature__brand">
+            <span class="feature__mono" style="--c1:#a9c8ff;--c2:#3c6fe8;--c3:#1b2f8f" aria-hidden="true">A</span>
+            <span class="project__cat">Sharjah International Airport · 2 weeks</span>
+          </div>
+          <h3 class="feature__title">Airport VR Experience: Explore Airports Like Never Before</h3>
+          <p>A VR game that immerses travellers in key airport locations through 360° video, bridging education and entertainment. It debuted at GITEX Technology Week 2017 in Dubai.</p>
+          <ul class="feature__tags">
+            <li>Unity3D</li><li>Google VR SDK</li><li>360° video</li><li>Custom UI</li><li>iOS</li>
+          </ul>
+          <div class="feature__links">
+            <a class="btn btn--sm btn--blue" href="https://primary-input-060174.framer.app/airport-vr-app" target="_blank" rel="noopener">Read case study ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature--flip reveal">
+        <div class="ring feature__art">
+          <div class="feature__stage feature__stage--photo"><img src="https://framerusercontent.com/images/kkrqAj0OXyOgbh4B5HwUzOtnOA.png" alt="Frooty AR game being played on a phone" loading="lazy" /></div>
+        </div>
+        <div class="feature__body">
+          <div class="feature__brand">
+            <span class="feature__mono" style="--c1:#ffd6a3;--c2:#f59322;--c3:#a14d06" aria-hidden="true">F</span>
+            <span class="project__cat">American University of Sharjah · 2 months</span>
+          </div>
+          <h3 class="feature__title">Frooty: Gamified Learning Through Augmented Reality</h3>
+          <p>An AR learning game that turns children&#x27;s everyday surroundings into a playful classroom, where they discover words and objects in the real world, with progress and scores tracked in real time.</p>
+          <ul class="feature__tags">
+            <li>Vuforia AR</li><li>Unity3D</li><li>Firebase</li><li>Gamified learning</li><li>iOS</li>
+          </ul>
+          <div class="feature__links">
+            <a class="btn btn--sm btn--blue" href="https://primary-input-060174.framer.app/fruity-ar-app" target="_blank" rel="noopener">Read case study ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature reveal">
+        <div class="ring feature__art">
+          <div class="feature__stage feature__stage--photo"><img src="https://framerusercontent.com/images/65HK8RUl06yz7mthAuNRDPS7Q8.png" alt="Desu app screens" loading="lazy" /></div>
+        </div>
+        <div class="feature__body">
+          <div class="feature__brand">
+            <span class="feature__mono" style="--c1:#c7cbff;--c2:#5b62f5;--c3:#272b8f" aria-hidden="true">D</span>
+            <span class="project__cat">Personal Project · 2 months</span>
+          </div>
+          <h3 class="feature__title">Desu: Simplify Learning and Doing, One Step at a Time</h3>
+          <p>A platform for creating and sharing compact step-by-step guides, from recipes and sports techniques to tech tips, using photos, voice notes and step counters, and sharing them with a global community.</p>
+          <ul class="feature__tags">
+            <li>Step-by-step notes</li><li>Voice notes</li><li>Global sharing</li><li>Profiles &amp; notifications</li><li>Real-time updates</li>
+          </ul>
+          <div class="feature__links">
+            <a class="btn btn--sm btn--blue" href="https://primary-input-060174.framer.app/desu-notes-app" target="_blank" rel="noopener">Read case study ↗</a>
+          </div>
+        </div>
+      </article>
     </section>
 
-    <!-- ============ CONTACT ============ -->
-    <section class="section contact" id="contact">
-      <header class="section__head">
-        <span class="section__num">04</span>
-        <h2>Let's talk</h2>
-      </header>
-      <p class="contact__lede">Open to interesting mobile work, collaborations and a good coffee in Melbourne.</p>
-      <!-- TODO: replace with your real links -->
-      <a class="contact__email" href="mailto:you@example.com">you@example.com</a>
-      <ul class="contact__links">
-        <li><a href="https://github.com/Haidarooz" target="_blank" rel="noopener">GitHub ↗</a></li>
-        <li><a href="#" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-        <li><a href="assets/Haidar-CV.pdf" target="_blank" rel="noopener">CV (PDF) ↗</a></li>
+    <!-- ============ OTHER CONTRIBUTIONS ============ -->
+    <section class="section" id="contributions">
+      <h2 class="title">Other Contributions</h2>
+      <div class="blob blob--d" aria-hidden="true"></div>
+      <ul class="flip-grid">
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <span class="flip__logo flip__logo--app flip__mono" aria-hidden="true">18</span>
+                <span class="flip__name">1800MEDICARE</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Senior mobile engineer at the Australian Digital Health Agency on the national 1800MEDICARE app, built with .NET MAUI.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/318JfSJqZfp0mlw5n4wfObqSm0.png" alt="" loading="lazy" />
+                <span class="flip__name">Service Victoria</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Updated, fixed, and implemented features and functionalities throughout the Service Victoria app.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/PpALhG2flengcVHMzBHjynQrBI.png" alt="" loading="lazy" />
+                <span class="flip__name">Visioni</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Re-skinned the entire application and implemented/updated various functionalities throughout the app. Both in iOS and Android.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/V7mCtghLp1TmdYz4kCybC7CcpY.png" alt="" loading="lazy" />
+                <span class="flip__name">Brisbane App</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Updated, fixed, and implemented features and functionalities throughout the Brisbane app.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/CIIPxrTelczROi1mY88yJK2ng.png" alt="" loading="lazy" />
+                <span class="flip__name">Newcastle App</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Updated, fixed, and implemented features and functionalities throughout the Newcastle app.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/ZTDJbO14TvARFscBqS2CSgdk0AU.png" alt="" loading="lazy" />
+                <span class="flip__name">ALDI Mobile</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Updated, fixed, and implemented features and functionalities throughout the ALDI Mobile app.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/ShrwElI93imtkMvxfa9HLLp7rnA.png" alt="" loading="lazy" />
+                <span class="flip__name">Bondi To Manly</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Updated, fixed, and implemented features and functionalities throughout the Bondi To Manly app.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/Yp0p9bNV43UA8JW6y5AeZ83Ick.png" alt="" loading="lazy" />
+                <span class="flip__name">Wellaware</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Updated, fixed, and implemented features and functionalities throughout the Wellaware app.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/g1mmYnAEr1hgwZkGXbfDixfcCNY.png" alt="" loading="lazy" />
+                <span class="flip__name">Soils Near Me</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Updated, fixed, and implemented features and functionalities throughout the Soils Near Me app.</span></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="flip reveal" type="button" aria-pressed="false">
+            <span class="flip__inner">
+              <span class="flip__face flip__front">
+                <img class="flip__logo flip__logo--app" src="https://framerusercontent.com/images/1Eb2FP6qR7ynesN13e8WrtLxDU.png" alt="" loading="lazy" />
+                <span class="flip__name">Pipecore</span>
+                <span class="flip__hint">Tap to flip</span>
+              </span>
+              <span class="flip__face flip__back"><span>Updated, fixed, and implemented features and functionalities throughout the Pipecore app.</span></span>
+            </span>
+          </button>
+        </li>
       </ul>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Haidar · Built by hand, hosted on GitHub Pages.</p>
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__cols">
+      <div>
+        <h2>Contact Me</h2>
+        <a href="https://calendly.com/haidaralogaily/30min" target="_blank" rel="noopener">Book a Call</a>
+        <a href="mailto:haidaralogaily@gmail.com">Email Me</a>
+      </div>
+      <div>
+        <h2>Social</h2>
+        <a href="https://www.linkedin.com/in/haidaralogaily" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Haidarooz" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <p class="footer__copy">© Copyright <span id="year"></span></p>
+    <p class="footer__word" aria-hidden="true">HAIDAR</p>
   </footer>
 
   <script src="script.js"></script>
