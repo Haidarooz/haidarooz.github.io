@@ -183,6 +183,11 @@ button { font: inherit; color: inherit; }
 .flip__back { transform: rotateY(180deg); background: var(--blue); color: #fff; font-size: 15.5px; line-height: 1.55; }
 .flip__logo { height: 76px; width: auto; max-width: 62%; object-fit: contain; }
 .flip__logo--app { height: 96px; width: 96px; max-width: none; border-radius: 22px; object-fit: cover; }
+.flip__logo--framed {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .08), 0 8px 18px -8px rgba(0, 0, 0, .28);
+}
+.flip__logo--padded { padding: 14px; object-fit: contain; }
 .flip__mono {
   display: grid; place-items: center; width: 96px; height: 96px; border-radius: 22px;
   background: linear-gradient(135deg, #0f6e4f, #1ea672); color: #fff; font: 400 34px var(--display);
